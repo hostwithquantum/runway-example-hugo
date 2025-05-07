@@ -13,12 +13,12 @@ to [runway](https://www.runway.horse/).
 You can then deploy changes by `git commit`ing them, and running `runway app
 deploy` again.
 
-This is an example hugo site. Runway automatically detects that and builds
-the site and serves it with nginx by default.
+**Runway automatically detects hugo sites**, without any additional
+configuration, and builds the site and serves it with nginx by default.
 
-So, in general you just need to:
-* `cd` to the root directory of your hugo site
-* do `runway app create` and `runway app deploy`
+In other words: you can just run `runway app create` and `runway app deploy` in
+the root dir of *your* hugo site, and you don't need anything from this example
+repo.
 
 ### optional settings
 
