@@ -13,11 +13,14 @@ to [runway](https://www.runway.horse/).
 You can then deploy changes by `git commit`ing them, and running `runway app
 deploy` again.
 
-This our `hugo` docker image (https://github.com/hostwithquantum/hugo-docker)
-to build your site, and `nginx` to serve it.
+This is an example hugo site. Runway automatically detects that and builds
+the site and serves it with nginx by default.
 
-To deploy your existing hugo site:
+So, in general you just need to:
+* `cd` to the root directory of your hugo site
+* do `runway app create` and `runway app deploy`
 
-* add the `Dockerfile` from this repo into your Hugo repository.
-* do `runway app create`/`runway app deploy`
+### optional settings
+
+* use `runway app config set BP_WEB_SERVER=httpd` if you want Apache instead of nginx
 
